@@ -135,18 +135,29 @@ The styles in the rule you make will be ADDED to the rules the plugin has, excep
 in which case your settings will override the plugin’s, like you want to happen.*/
 
 
+
+
+
+
+
+
 /*Media queries*/
 
 
 /********* Media Queries  **********/
 
 @media screen and (max-width: 480px) {
+
     .gallery li {
         width: 80%;
     }
+
     input {
         width: 240px;
     }
+
+
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {

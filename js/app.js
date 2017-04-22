@@ -21,6 +21,17 @@ $(document).ready(function() {
 
 });
 
+//DISABLING FANCYBOX ON MOBILE:
+
+$(document).on('load, resize', function mobileViewUpdate() {
+    var viewportWidth = $(window).width();
+    if (viewportWidth < 480) {
+        $(".gallery-image").removeClass("fancybox");
+    }
+});
+
+
+
 
 //SEARCH FUNCTION:
 
