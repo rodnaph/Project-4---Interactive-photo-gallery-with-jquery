@@ -1,0 +1,161 @@
+/*Base styles*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #E5E8E8;
+    font-size: 1em;
+    line-height: 1.5;
+    position: relative;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: darkgrey;
+    font-weight: 800;
+    font-size: 2.2em;
+}
+
+
+/*Images*/
+
+img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 7px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+/*Header*/
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    background: white;
+    height: 160px;
+    z-index: 999;
+}
+
+
+/*Container*/
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+/*Search box*/
+
+input {
+    width: 480px;
+    border: 2px solid #ccc;
+    line-height: 2em;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    box-shadow: 0 0 3px #aaa;
+    border: 1px solid grey;
+    background-color: #F3F3F3;
+}
+
+
+/*Gallery*/
+
+.gallery {
+    width: 100%;
+    margin: 200px auto;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.gallery li {
+    display: inline-block;
+    width: 20%;
+    margin: 10px auto 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.gallery-image {
+  margin: 0;
+
+
+}
+
+
+/*Footer*/
+
+footer {
+    position: relative;
+    margin: 80px 0;
+    float: left;
+    width: 100%;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.footer-text {
+    font-size: 1.4em;
+}
+
+
+/* CLEARFIX */
+
+.clearfix {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+
+/*FANCYBOX
+
+You’re going to change the css in your stylesheet, and then include the link tag to your css file AFTER the link tag for the plugin’s stylesheet.
+That way, the styles will “cascade”: the plugin styles will be applied, and then your own styles
+will be applied and override any conflicting styles that came before. */
+
+
+/*
+No, go ahead and reuse the class that the plugin is using if it specifically targets the caption.
+The styles in the rule you make will be ADDED to the rules the plugin has, except in the case where the properties targeted are the same,
+in which case your settings will override the plugin’s, like you want to happen.*/
+
+
+/*Media queries*/
+
+
+/********* Media Queries  **********/
+
+@media screen and (max-width: 480px) {
+    .gallery li {
+        width: 80%;
+    }
+    input {
+        width: 240px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .gallery li {
+        width: 33%;
+    }
+    input {
+        width: 320px;
+    }
+}
+
+@media screen and (min-width: 769px) {}
